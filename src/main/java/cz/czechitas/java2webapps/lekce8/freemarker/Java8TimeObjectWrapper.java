@@ -2,10 +2,20 @@ package cz.czechitas.java2webapps.lekce8.freemarker;
 
 import freemarker.ext.beans.BeansWrapperConfiguration;
 import freemarker.ext.beans.DateModel;
-import freemarker.template.*;
+import freemarker.template.DefaultObjectWrapper;
+import freemarker.template.DefaultObjectWrapperConfiguration;
+import freemarker.template.TemplateHashModel;
+import freemarker.template.TemplateModel;
+import freemarker.template.TemplateModelException;
+import freemarker.template.Version;
 
 import java.lang.reflect.InvocationTargetException;
-import java.time.*;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.OffsetDateTime;
+import java.time.OffsetTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 public class Java8TimeObjectWrapper extends DefaultObjectWrapper {

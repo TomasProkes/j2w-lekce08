@@ -1,27 +1,21 @@
 package cz.czechitas.java2webapps.lekce8.controller;
 
-import cz.czechitas.java2webapps.lekce8.repository.OsobaRepository;
 import cz.czechitas.java2webapps.lekce8.entity.Osoba;
+import cz.czechitas.java2webapps.lekce8.repository.OsobaRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.time.LocalDate;
-import java.util.List;
-import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
